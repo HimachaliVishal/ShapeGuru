@@ -1,0 +1,59 @@
+@import "../../assets/sass/variables.scss";
+
+.customBtn {
+  border: 2px solid $btnYellow;
+  background: transparent;
+  color: $btnYellow;
+  padding: 15px;
+  min-width: 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  svg {
+    transition: all 0.3s ease-in-out;
+    margin-left: 5px;
+  }
+  &:hover {
+    color: $primary-color;
+
+    svg {
+      transform: translateX(10px);
+      // margin-left: 15px;
+    }
+  }
+}
+
+.Button2 {
+  border: 0;
+  background: $btnYellow;
+  color: $btnYellowColor;
+  padding: 15px;
+  min-width: 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  svg {
+    transition: all 0.3s ease-in-out;
+    margin-left: 5px;
+  }
+  &:hover {
+    color: $btnYellowColor;
+
+    svg {
+      transform: translateX(10px);
+      // margin-left: 15px;
+    }
+  }
+}

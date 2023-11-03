@@ -1,0 +1,291 @@
+@import "../../assets/sass/variables.scss";
+
+.home {
+  &__banner {
+    background: $banner-gradient;
+    padding: 100px 0;
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      opacity: 0.5;
+    }
+
+    &__text {
+      position: relative;
+      z-index: 2;
+      h1 {
+        font-size: 62px;
+        font-weight: 800;
+        color: $color-white;
+        margin: 0;
+      }
+      p {
+        font-size: 16px;
+        color: $color-white;
+        margin: 20px 0 40px 0;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+// expertCoaches Section
+
+.heading {
+  text-align: center;
+  h2 {
+    font-size: 52px;
+    font-weight: 800;
+    color: $text-Color;
+    position: relative;
+    padding-bottom: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 6px;
+      background: $banner-gradient;
+      width: 100px;
+      margin: auto;
+      right: 0;
+      border-radius: 6px;
+    }
+  }
+}
+
+.expertCoaches {
+  padding: 80px 0;
+  .g-0 {
+    margin-top: 80px;
+}
+
+  &__text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    
+    // max-width: 550px;
+    
+
+    &__center {
+      h3 {
+        font-size: 42px;
+        font-weight: 800;
+        color: $text-Color;
+        margin: 0 0 20px 0;
+      }
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .rightImg {
+    max-width: 500px;
+    margin-left: auto;
+    position: relative;
+    min-height: 400px;
+  
+    img {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .frontImg {
+      position: relative;
+      z-index: 2;
+      right: 50px;
+      top: 50px;
+    }
+    .backImg {
+      position: absolute !important;
+      top: 0;
+      right: 0;
+      z-index: 1 !important;
+    }
+  }
+
+  .leftImg {
+    max-width: 500px;
+    margin-left: 0;
+    position: relative;
+    // min-height: 400px;
+    // margin-bottom:50px;
+
+    img {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .frontImg {
+      position: relative;
+      z-index: 2;
+      left: 50px;
+      top: 50px;
+    }
+    .backImg {
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      z-index: 1 !important;
+    }
+  }
+}
+
+.youTubeVideo {
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 54.8%;
+  iframe {
+    width: 100%;
+    /* : 100%; */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+
+    height: 100%;
+  }
+}
+
+.testimonial {
+  // width: calc(100% - 70px);
+  margin: auto;
+
+  .slick-arrow{
+    position: absolute;
+    transform: unset !important;
+    top: unset !important;
+    bottom: -40px;
+    left: 30px;
+  }
+  .slick-prev{
+    right: unset !important;
+    left: 0px !important;
+  }
+  .slick-dots {
+    position: static !important;
+    margin-top: 20px;
+  }
+  .slick-track {
+    display: flex;
+    gap: 0;
+  }
+  &__item {
+    height: 100%;
+  }
+  &__content {
+    padding: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    p {
+      font-size: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .posted {
+      display: flex;
+      align-self: center;
+      margin-top: 30px;
+      width: 100%;
+      &__img {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        background-color: #ccc;
+        margin-right: 8px;
+        overflow: hidden;
+      }
+
+      &__by {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h5 {
+          font-size: 18px;
+          font-weight: 800;
+          color: $text-Color;
+          margin: 0;
+        }
+        p {
+          font-size: 13px;
+          margin: 0;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+
+.videoTestimonial {
+  padding: 50px 0;
+  background-color: $primary-color;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center right;
+  
+
+  .heading {
+    h2 {
+      color: $color-white;
+    }
+  }
+
+  .slick-dots li button:before,
+  .slick-dots li.slick-active button:before {
+    color: $color-white;
+  }
+  .btn-videosectn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .youTubeVideoWrap {
+    padding: 8px;
+    background: #fff;
+    box-sizing: border-box;
+}
+}
+
+.frontImg {
+  animation: move 2s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0, -10px);
+  }
+}

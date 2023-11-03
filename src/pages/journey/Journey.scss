@@ -1,0 +1,63 @@
+@import "../../assets/sass/variables.scss";
+.journeyPage {
+  // background-color: $lightBg;
+  border-top: 1px solid #ddd;
+.row{
+    div{
+        &:last-child{
+            .journeyPage__card {
+                border-bottom: 0;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+  &__card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+
+    figure {
+      width: 250px;
+
+      background-color: #ccc;
+      height: 250px;
+      border-radius: 16px;
+      overflow: hidden;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,.2);
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__text {
+      padding-left: 60px;
+      width: calc(100% - 250px);
+
+      h3 {
+        font-weight: 700;
+        font-size: 42px;
+        a{
+          color: $text-Color;
+          &:hover{
+            color: $primary-color;
+          }
+        }
+      }
+      p {
+        font-size: 18px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.pright{
+    .journeyPage__card__text{
+        padding: 0 30px 0 0;
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../assets/sass/variables.scss";
+
+.header {
+  padding: 10px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    ul {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-left: 80px;
+
+        a {
+          display: block;
+          padding: 10px 0;
+          text-decoration: none;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: $text-Color;
+          letter-spacing: 1px;
+          transition: all 0.3s ease-in-out;
+          position: relative;
+          font-weight: 600;
+
+          &:hover {
+            color: $primary-color;
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+  }
+}

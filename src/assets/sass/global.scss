@@ -1,0 +1,82 @@
+@import "./variables.scss";
+body {
+  font-family: $body-Font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span,
+i,
+em,
+b {
+  font-family: $body-Font;
+}
+.youTubeVideoWrap {
+  height: 100%;
+  .youTubeVideo {
+    height: 100%;
+  }
+}
+// RESPONSIVE CSS
+
+@media screen and (max-width: 1366px) {
+  .home {
+    &__banner {
+      &__text {
+        h1 {
+          font-size: 52px;
+          line-height: 52px;
+        }
+      }
+    }
+  }
+
+  .heading h2 {
+    font-size: 42px;
+  }
+  .expertCoaches__text__center h3 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .expertCoaches {
+    &__text {
+      padding: 0;
+      margin-bottom: 150px;
+      align-items: flex-start;
+    }
+    &__text.pe-5 {
+      padding-right: 100px !important;
+    }
+    &__text.ps-5 {
+      padding-left: 100px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .expertCoaches {
+    .col-md-6 {
+      width: 100%;
+      .expertCoaches__text {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .expertCoaches__images {
+        margin: auto auto 100px auto;
+      }
+
+      
+    }
+
+    
+  }
+}

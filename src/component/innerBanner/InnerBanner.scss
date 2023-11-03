@@ -1,0 +1,14 @@
+@import '../../assets/sass/variables.scss';
+
+.InnerBanner{
+    background: $banner-gradient;
+    text-align: center;
+    h1{
+        text-align: center;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+}

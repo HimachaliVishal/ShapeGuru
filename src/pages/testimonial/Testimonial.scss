@@ -1,0 +1,23 @@
+@import "../../assets/sass/variables.scss";
+
+.testimonialPage {
+    padding: 80px 0;
+
+   
+
+    .testimonialItem {
+        padding: 8px;
+        .testimonial__content {
+            p {
+                -webkit-line-clamp: unset;
+                order: 2;
+                text-align: justify;
+                margin: 0;
+            }
+        }
+        .posted{
+            margin: 0 0 15px 0;
+            order: 1;
+        }
+    }
+}
